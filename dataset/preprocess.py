@@ -28,7 +28,7 @@ from shutil import which
 # and this seems better
 # https://alexandra-zaharia.github.io/posts/kill-subprocess-and-its-children-on-timeout-python/
 class RunCmd(threading.Thread):
-    def __init__(self, cmd, timeout = 10):
+    def __init__(self, cmd, timeout = 120):
         threading.Thread.__init__(self)
         self.cmd = cmd
         self.timeout = timeout
